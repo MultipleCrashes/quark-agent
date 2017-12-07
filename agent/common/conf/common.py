@@ -17,8 +17,8 @@ from neutron_lib.utils import net
 from oslo_config import cfg
 from oslo_service import wsgi
 
-from _i18n import _
-from common import constants
+from agent._i18n import _
+from agent.common import constants
 
 
 core_opts = [
