@@ -29,7 +29,7 @@ from oslo_middleware import cors
 from oslo_service import wsgi
 
 from _i18n import _, _LI
-from conf import common as common_config
+from quark_agent.common.common import register_core_common_config_opts
 from neutron import policy
 from neutron import version
 
@@ -46,7 +46,7 @@ EXTRA_LOG_LEVEL_DEFAULTS = [
 ]
 
 # Register the configuration options
-common_config.register_core_common_config_opts()
+register_core_common_config_opts()
 
 # Ensure that the control exchange is set correctly
 oslo_messaging.set_transport_defaults(control_exchange='neutron')

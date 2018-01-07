@@ -27,7 +27,7 @@ import signal
 import sys
 import time
 import uuid
-
+import quark
 from debtcollector import removals
 import eventlet
 from eventlet.green import subprocess
@@ -47,7 +47,6 @@ from oslo_utils import importutils
 import six
 from stevedore import driver
 
-import neutron
 from neutron._i18n import _, _LE
 from neutron.db import api as db_api
 
@@ -796,8 +795,8 @@ def import_modules_recursively(topdir):
             # NOTE(ihrachys): in Python3, or when we are not located in the
             # directory containing neutron code, __file__ is absolute, so we
             # should truncate it to exclude PYTHONPATH prefix
-            prefixlen = len(os.path.dirname(neutron.__file__))
-            import_base = 'neutron' + import_base[prefixlen:]
+            prefixlen = len(os.path.dirname(quark.__file__))
+            import_base = 'quark' + import_base[prefixlen:]
 
             module = '.'.join([import_base, module])
             if module not in sys.modules:
