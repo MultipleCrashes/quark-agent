@@ -18,7 +18,7 @@ from oslo_config import cfg
 from oslo_service import wsgi
 
 from _i18n import _
-from common import constants
+import constants
 
 
 core_opts = [

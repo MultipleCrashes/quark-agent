@@ -19,7 +19,7 @@ Routines for configuring Neutron
 
 import sys
 
-from keystoneauth1 import loading as ks_loading
+#from keystoneauth1 import loading as ks_loading
 from api import validators
 from oslo_config import cfg
 from oslo_db import options as db_options
@@ -27,9 +27,9 @@ from oslo_log import log as logging
 import oslo_messaging
 from oslo_middleware import cors
 from oslo_service import wsgi
-
+from quark_agent.conf import common as common_config
 from _i18n import _, _LI
-from quark_agent.common.common import register_core_common_config_opts
+from common import register_core_common_config_opts
 from neutron import policy
 from neutron import version
 
@@ -65,8 +65,8 @@ set_db_defaults()
 
 NOVA_CONF_SECTION = 'nova'
 
-ks_loading.register_auth_conf_options(cfg.CONF, NOVA_CONF_SECTION)
-ks_loading.register_session_conf_options(cfg.CONF, NOVA_CONF_SECTION)
+#ks_loading.register_auth_conf_options(cfg.CONF, NOVA_CONF_SECTION)
+#ks_loading.register_session_conf_options(cfg.CONF, NOVA_CONF_SECTION)
 
 
 # Register the nova configuration options

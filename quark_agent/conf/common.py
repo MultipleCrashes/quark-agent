@@ -18,7 +18,7 @@ from oslo_config import cfg
 from oslo_service import wsgi
 
 from _i18n import _
-from quark.common import constants
+from quark_agent.common import constants
 
 
 core_opts = [
