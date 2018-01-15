@@ -1,1 +1,4 @@
 *.pyc 
+common/*.pyc 
+conf/*.pyc
+db/*.pyc
