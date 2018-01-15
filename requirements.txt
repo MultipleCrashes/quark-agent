@@ -41,7 +41,6 @@ msgpack-python==0.5.1
 MySQL-python==1.2.5
 netaddr==0.7.19
 netifaces==0.10.6
--e git+git@github.rackspace.com:O3Eng/neutron.git@45d61e57493a87d0d1657cbdfc05529742432546#egg=neutron
 neutron-lib==1.11.0
 os-client-config==1.28.0
 osc-lib==1.7.0
