@@ -27,9 +27,9 @@ from oslo_service import service
 from oslo_utils import excutils
 from osprofiler import profiler
 
-from neutron._i18n import _LE, _LW
-from neutron.common import exceptions
-from neutron import context
+from quark_agent._i18n import _LE, _LW
+from quark_agent.common import exceptions
+from quark_agent import context
 
 
 LOG = logging.getLogger(__name__)

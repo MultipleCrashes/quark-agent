@@ -47,8 +47,8 @@ from oslo_utils import importutils
 import six
 from stevedore import driver
 
-from neutron._i18n import _, _LE
-from neutron.db import api as db_api
+from quark_agent._i18n import _, _LE
+from quark_agent import api as db_api
 
 TIME_FORMAT = "%Y-%m-%dT%H:%M:%SZ"
 LOG = logging.getLogger(__name__)

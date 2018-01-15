@@ -30,8 +30,8 @@ from oslo_service import wsgi
 from quark_agent.conf import common as common_config
 from _i18n import _, _LI
 from common import register_core_common_config_opts
-from neutron import policy
-from neutron import version
+from quark_agent import policy
+from quark_agent import version
 
 
 LOG = logging.getLogger(__name__)

@@ -16,7 +16,7 @@
 from oslo_config import cfg
 from oslo_service import wsgi
 
-from neutron._i18n import _
+from quark_agent._i18n import _
 
 socket_opts = [
     cfg.IntOpt('backlog',

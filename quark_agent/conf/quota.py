@@ -16,7 +16,7 @@
 
 from oslo_config import cfg
 
-from neutron._i18n import _
+from quark_agent._i18n import _
 
 QUOTA_DB_MODULE = 'neutron.db.quota.driver'
 QUOTA_DB_DRIVER = '%s.DbQuotaDriver' % QUOTA_DB_MODULE

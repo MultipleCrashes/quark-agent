@@ -15,7 +15,7 @@
 
 from neutron_lib import exceptions as e
 
-from neutron._i18n import _
+from quark_agent._i18n import _
 
 
 class SubnetPoolNotFound(e.NotFound):

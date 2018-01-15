@@ -27,9 +27,9 @@ from oslo_utils import excutils
 from oslo_utils import importutils
 import six
 
-from neutron._i18n import _, _LE, _LW
-from neutron.api.v2 import attributes
-from neutron.common import constants as const
+from quark_agent._i18n import _, _LE, _LW
+from quark_agent import attributes
+from quark_agent.common import constants as const
 
 
 LOG = logging.getLogger(__name__)
